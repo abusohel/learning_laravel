@@ -1,0 +1,40 @@
+
+php artisan tinker
+
+DB::table('songs')->insert(['title'=>'closer', 'artist'=>'chainsmoker', 'created_at'=>new DateTime, 'updated_at'=>new DateTime]);
+
+DB::table('songs')->get();
+DB::table('songs')->where('id',2)->get();
+php artisan make:model song
+
+php artisan make:migration create_user_table --create=users
+php artisan make:migration create_passport_table --create=passports
+
+php artisan make:migration create_role_user_table --create=role_user
+php artisan migrate
+ DB::table('users')->insert(['name'=>'sohel','created_at'=>new DateTime,'updated_at'=>new DateTime]);
+App\user::all();
+php artisan make:model user
+php artisan make:model passport
+DB::table('passports')->insert(['number'=>'125358','user_id'=>'2','created_at'=>new DateTime,'updated_at'=>new DateT
+ime]);
+
+App\user::find(1);
+App\user::find(1)->passport
+ public function passport(){
+    	return $this->hasOne(Passport::class);
+    }
+
+ public function user(){
+    	return $this->belongsto(User::class);
+    }
+App\passport::find(1)->user
+
+DB::table('posts')->insert(['user_id'=>'1', 'title'=>'this is the first post']);
+php artisan make:migration create_posts_table --create=posts
+
+ $table->increments('id');
+            $table->integer('usr_id');
+            $table->string('title');
+
+ App\country::find(1)->posts;
