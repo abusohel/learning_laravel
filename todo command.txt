@@ -3,3 +3,4 @@ https://bootswatch.com/cosmo/
 php artisan make:controller todocontroller --resource
 php artisan make:model todo -m  model with migration created
 php artisan migrate
+diffForHumans() 10 minutes ago carbon function
