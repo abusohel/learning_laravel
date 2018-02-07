@@ -1,0 +1,3 @@
+https://www.bootstrapcdn.com/
+https://bootswatch.com/cosmo/
+php artisan make:controller todocontroller --resource
