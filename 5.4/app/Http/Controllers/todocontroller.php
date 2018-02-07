@@ -38,6 +38,9 @@ class todocontroller extends Controller
     public function store(Request $request)
     {
         $todo=new todo;
+        $this->validate($request,[
+            'body'=>'required|unique:todos',
+        ]);
         $todo->body=$request->body;
         $todo->save();
         return redirect('todo');
