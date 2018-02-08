@@ -1,4 +1,5 @@
 https://www.bootstrapcdn.com/
+https://www.bootstrapcdn.com/fontawesome
 https://bootswatch.com/cosmo/
 php artisan make:controller todocontroller --resource
 php artisan make:model todo -m  model with migration created

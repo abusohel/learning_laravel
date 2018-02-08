@@ -2,6 +2,7 @@
 
 @section('body')
 	<br>
+	@include('todo.partials.message')
 	<a href="todo/create" class="btn btn-info">Add New</a>
 	<div class="col-lg-6 col-lg-offset-3">
 		<center><h1>Todo Lists</h1></center>
@@ -19,7 +20,7 @@
 			@foreach($todos as $todo)
 			
 		<li class="list-group-item">
-			<center><a href="{{'/todo/'.$todo->id.'/edit'}}">Edit</a></center>
+			<center><a href="{{'/todo/'.$todo->id.'/edit'}}"><i class="fa fa-pencil-square-o">Edit</i></a></center>
 		</li>
 		@endforeach
 		</ul>

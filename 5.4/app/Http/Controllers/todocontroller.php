@@ -92,6 +92,7 @@ class todocontroller extends Controller
         $todo->title=$request->title;
         $todo->body=$request->body;
         $todo->save();
+        session()->flash('message','Updated Succesfully');
         return redirect('todo');
     }
 
