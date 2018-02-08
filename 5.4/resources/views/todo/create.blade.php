@@ -8,8 +8,14 @@
 		
 	<form class="form-horizontal" action="/todo" method="post">
 		{{csrf_field()}}
+		<div class="form-group">      
+       
+       <input type="text" class="form-control" name="title" placeholder="Title">
+       <br>
+       
+      </div> 
        <div class="form-group">      
-       <textarea class="form-control" name="body" id="exampleTextarea" rows="5"></textarea>
+       <textarea class="form-control" name="body" id="exampleTextarea" rows="5" placeholder="Body"></textarea>
        <br>
        <button type="submit" class="btn btn-success">Submit</button>
       </div>    

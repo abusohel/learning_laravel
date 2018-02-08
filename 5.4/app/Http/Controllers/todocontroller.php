@@ -39,8 +39,10 @@ class todocontroller extends Controller
     {
         $todo=new todo;
         $this->validate($request,[
-            'body'=>'required|unique:todos',
+            'body'=>'required|',
+            'title'=>'required|unique:todos',
         ]);
+        $todo->title=$request->title;
         $todo->body=$request->body;
         $todo->save();
         return redirect('todo');

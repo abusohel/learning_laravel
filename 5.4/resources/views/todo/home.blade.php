@@ -9,7 +9,7 @@
 			@foreach($todos as $todo)
 			
 		<li class="list-group-item">
-			{{$todo->body}}
+			{{$todo->title}}
 			<span class="pull-right">{{$todo->created_at->diffForHumans()}}</span>
 		</li>
 		@endforeach
