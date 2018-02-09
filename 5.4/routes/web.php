@@ -13,6 +13,6 @@
 Route::get('/',function(){
 	return view('welcome');
 });
-Route::get('about','testcontroller@about');
-Route::get('contact','testcontroller@contact');
+Route::get('about','testcontroller@about')->middleware('test:ss');
+Route::get('contact','testcontroller@contact')->middleware('test:sohel');
 Route::resource('todo', 'todocontroller');
