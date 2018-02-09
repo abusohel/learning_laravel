@@ -8,3 +8,4 @@ diffForHumans() 10 minutes ago carbon function
 php artisan migrate:refresh
 
 php artisan make:middleware test
+php artisan config:clear
