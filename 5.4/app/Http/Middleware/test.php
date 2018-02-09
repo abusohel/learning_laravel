@@ -16,8 +16,8 @@ class test
     public function handle($request, Closure $next)
     {
         $ip=$request->ip();
-        if ($ip=='127.0.1.1') {
-            throw new \Exception("Your IP Is Correct");
+        if ($ip=='127.0.0.1') {
+            return redirect('/');
             
         }
         return $next($request);
