@@ -6,3 +6,5 @@ php artisan make:model todo -m  model with migration created
 php artisan migrate
 diffForHumans() 10 minutes ago carbon function
 php artisan migrate:refresh
+
+php artisan make:middleware test
