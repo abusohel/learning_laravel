@@ -6,6 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Http\request;
 
 class SendMail extends Mailable
 {
@@ -26,8 +27,8 @@ class SendMail extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(request $request)
     {
-        return $this->view('mail')->to('abusoheljnu@gmail.com');
+        return $this->view('mail',['msg'=>$request->message])->to($request->to);
     }
 }

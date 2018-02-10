@@ -12,6 +12,8 @@ class mailController extends Controller
     {
     	Mail::send(new sendMail());	
     }
-	
+	public function email(){
+		return view('email');
+	}
 
 }

@@ -6,7 +6,7 @@
 	<title>Document</title>
 </head>
 <body>
-	<h1>Welcome, this is a new mail</h1>
+	<h1>Welcome, this is a mail system. {{$msg}}</h1>
 	
 </body>
 </html>
