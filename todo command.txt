@@ -13,3 +13,4 @@ php artisan make:controller mailController
 php artisan vendor:publish --tag=laravel-mail
 
 php artisan db:seed
+php artisan db:seed --class=TestSeeder
