@@ -6,6 +6,8 @@ php artisan make:model todo -m  model with migration created
 php artisan migrate
 diffForHumans() 10 minutes ago carbon function
 php artisan migrate:refresh
-
 php artisan make:middleware test
 php artisan config:clear
+php artisan make:mail newMail --markdown=email
+php artisan make:controller mailController
+php artisan vendor:publish --tag=laravel-mail
