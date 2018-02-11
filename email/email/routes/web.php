@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('send','mailController@index');
+// Route::get('send','mailController@index');
+Route::get('users','Pagination@index');
