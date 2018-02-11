@@ -7,7 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class Mailtrap extends Mailable
+class newMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -28,6 +28,6 @@ class Mailtrap extends Mailable
      */
     public function build()
     {
-        return $this->view('mail');
+        return $this->markdown('email')->to('abusoheljnu@gmail.com');
     }
 }
