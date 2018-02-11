@@ -11,3 +11,5 @@ php artisan config:clear
 php artisan make:mail newMail --markdown=email
 php artisan make:controller mailController
 php artisan vendor:publish --tag=laravel-mail
+
+php artisan db:seed
