@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\AuthenticatesUsers; 
 
 class LoginController extends Controller
@@ -37,6 +38,29 @@ class LoginController extends Controller
     {
         $this->middleware('guest:admin')->except('logout');
     }
+
+
+    /**
+     * Send the response after the user was authenticated.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    protected function sendLoginResponse(Request $request)
+    {
+        $request->session()->regenerate();
+
+        $this->clearLoginAttempts($request);
+
+        foreach ($this->guard()->user()->role as $role) {
+            if ($role->name=='admin') {
+                return redirect('admin/home');
+            }elseif ($role->name=='editor') {
+                return redirect('admin/editor');
+            }
+        }
+    }
+
 
     /**
      * Show the application's login form.
