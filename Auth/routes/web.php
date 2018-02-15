@@ -21,6 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::GET('admin/home','AdminController@index');
 Route::GET('admin/editor','EditorController@index');
+Route::GET('admin/test','EditorController@test');
 
 Route::GET('admin','Admin\LoginController@showLoginForm')->name('admin.login');             
 Route::POST('admin','Admin\LoginController@login'); 
