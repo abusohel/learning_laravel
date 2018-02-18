@@ -79,6 +79,9 @@
 
             <div class="content">
                 <div class="title m-b-md">
+                    @if (session('Status'))
+                        <p>{{session('Status')}}</p>
+                    @endif
                     Laravel
                 </div>
 
