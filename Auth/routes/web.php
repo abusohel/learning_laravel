@@ -32,5 +32,8 @@ Route::GET('admin-password/reset/{token}','Admin\ResetPasswordController@showRes
 Route::get('verifyEmailFirst', 'Auth\RegisterController@verifyEmailFirst')->name('verifyEmailFirst');
 Route::get('verify/{email}/{verifyToken}','Auth\RegisterController@sendEmailDone')->name('sendEmailDone');
 
-Route::get('custom-register','CustomAuthController@showRegisterForm')->name('register');
+Route::get('custom-register','CustomAuthController@showRegisterForm')->name('custom.register');
 Route::post('custom-register', 'CustomAuthController@register');
+
+Route::get('custom-login','CustomAuthController@showLoginForm')->name('custom.login');
+Route::post('custom-login', 'CustomAuthController@login');
