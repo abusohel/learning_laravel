@@ -1,4 +1,5 @@
-@extends('products.layout')
+{{-- @extends('products.layout') --}}
+@extends('admin.layout.auth')
 
 
 @section('content')

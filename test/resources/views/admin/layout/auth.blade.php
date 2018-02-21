@@ -8,7 +8,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel Multi Auth Guard') }}</title>
+   {{--  <title>{{ config('app.name', 'Laravel Multi Auth Guard') }}</title> --}}
+    <title>Laravel 5.6 CRUD Application</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
@@ -78,7 +81,11 @@
         </div>
     </nav>
 
+    <div class="container">
+
     @yield('content')
+
+</div>
 
 <script
               src="http://code.jquery.com/jquery-3.3.1.js"

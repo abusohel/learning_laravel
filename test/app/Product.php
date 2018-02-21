@@ -12,4 +12,9 @@ class Product extends Model
         'name', 'detail'
 
     ];
+
+        public function admin(){
+	return $this->belongsto(Admin::class);
+   }
+
 }

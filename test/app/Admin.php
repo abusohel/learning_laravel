@@ -38,4 +38,9 @@ class Admin extends Authenticatable
     {
         $this->notify(new AdminResetPassword($token));
     }
+
+
+ public function product(){
+     return $this->hasOne(Product::class);
+ }
 }
