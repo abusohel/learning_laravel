@@ -31,3 +31,5 @@ Route::group(['prefix' => 'admin'], function () {
 
 Route::get('upload','uploadController@index');
 Route::post('store','uploadController@store');
+
+Route::resource('products','ProductController');
