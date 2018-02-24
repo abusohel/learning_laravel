@@ -1,0 +1,35 @@
+PCI\VEN_1969&DEV_2062&SUBSYS_06031025
+https://www.doctorfox.co.uk/
+http://os.com.bd/index.php/doctor-auto-prescription-software-in-bangladesh/
+https://codecanyon.net/item/doctorss-doctor-appointment-and-prescription-system-with-website/18541017
+https://www.webdoctor.ie/
+http://creativeitem.com/demo/doctor_appointment_wp/wp-admin/admin.php?page=ctmdc-manage-appointments#
+https://codecanyon.net/item/doctorss-doctor-appointment-and-prescription-system-with-website/18541017?s_rank=1059&ref=affadsense
+
+
+    Online Prescription Management System
+    API integration with any CMS
+    Easy Wordpress integration
+    Doctors Time Off Management
+    Doctors Scheduling Management
+    Patients Management
+    Bootstrap Based Design
+    Fresh and Clean Code
+    Modern Website integration
+    All Browser Support
+    Fully Responsive
+Change Log at version 1.6 & 1.7 (Date : 22.09.2017)
+1.Admin Panel changes
+2.Email System added
+3.SMS System added
+4.Payment Module added through Pyapal
+5.Trade & Generic Prescription System added
+6.Web Part updated
+7.Javascript and css update as a result site is more faster then before
+8.Appointment time based added
+9.Multi Language added for any country
+10.Prescription Print Patter added
+11.There was a Problem with frontend calder datepicker.it is fixed in this version
+12.Week language problem fixed.
+13. admin panel little loading problem fixed.
+14.localhost login issue is fixed.
