@@ -16,17 +16,20 @@ class FileController extends Controller
 	{
 
 		if ($request->hasFile('file')) {
-
-			$filename=$request->file->getClientOriginalName();
-			$filesize=$request->file->getClientSize();
-			$request->file->storeAs('public/upload',$filename);
-			$file=new File;
-			$file->name=$filename;
-			$file->size=$filesize;
-			$file->save();
+			foreach ($request->file as $file) {
+			
+			$filename=$file->getClientOriginalName();
+			$filesize=$file->getClientSize();
+			$file->storeAs('public/upload',$filename);
+			$fileModel=new File;
+			$fileModel->name=$filename;
+			$fileModel->size=$filesize;
+			$fileModel->save();
+			
+			}
 			return 'yes';
 		}
-	 return $request->all();
-	 }
+	 
+	}
     
 }

@@ -11,12 +11,12 @@
 			<br>
 			<form action="{{route('upload.file')}}" method="post" enctype="multipart/form-data" class="form-horizontal">
 				{{csrf_field()}}
-				<input type="file" name="file"> <br>
+				<input type="file" name="file[]" multiple> <br>
 				<input type="submit" value="submit" class="btn btn-info">
 			</form>
 		</div>
 		<div class="row">
-			<img src="{{ asset('storage/upload/1981895_748231568534697_764049217_n.jpg') }}" alt="">
+			<img src="{{ asset('storage/upload/11174885_876324232429783_7811506296448584753_n.jpg') }}" alt="">
 		</div>
 	</div>
 </body>
