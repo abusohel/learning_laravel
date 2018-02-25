@@ -15,6 +15,9 @@
 				<input type="submit" value="submit" class="btn btn-info">
 			</form>
 		</div>
+		<div class="row">
+			<img src="{{ asset('storage/upload/1981895_748231568534697_764049217_n.jpg') }}" alt="">
+		</div>
 	</div>
 </body>
 </html>

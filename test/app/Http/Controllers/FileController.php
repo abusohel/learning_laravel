@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\File;
 use Illuminate\Http\Request;
 
 class FileController extends Controller
@@ -15,8 +16,15 @@ class FileController extends Controller
 	{
 
 		if ($request->hasFile('file')) {
-			return $request->file->store('public/upload');
-			// return 'yes';
+
+			$filename=$request->file->getClientOriginalName();
+			$filesize=$request->file->getClientSize();
+			$request->file->storeAs('public/upload',$filename);
+			$file=new File;
+			$file->name=$filename;
+			$file->size=$filesize;
+			$file->save();
+			return 'yes';
 		}
 	 return $request->all();
 	 }
