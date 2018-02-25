@@ -47,8 +47,19 @@ class uploadController extends Controller
     	// 	return 'copied';
     	// }
 
-    	if (Storage::move('public/sohel.jpg', 'sohe.jpg')) {
-    		return 'moved';
-    	}
+    	// if (Storage::move('public/sohel.jpg', 'sohe.jpg')) {
+    	// 	return 'moved';
+    	// }
+
+
+    	// $rawcontaent=Storage::get('sohe.jpg');
+    	// if (Storage::put('new.jpg',$rawcontaent)) {
+    	// 	return 'file created';
+    	// }
+    	if (Storage::delete('new.jpg')) {
+    		return 'deleted';
+    	}	
+
+
      }
 }
