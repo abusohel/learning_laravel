@@ -16,3 +16,17 @@ php artisan vendor:publish --tag=laravel-mail
 php artisan db:seed
 php artisan db:seed --class=TestSeeder
 php artisan make:controller ProductController --resource --model=Product
+
+…or create a new repository on the command line
+
+echo "# employee" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/abusohel/employee.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/abusohel/employee.git
+git push -u origin master
