@@ -35,8 +35,20 @@ class uploadController extends Controller
     	// return Storage::makeDirectory('public/make');
     	// if (Storage::deleteDirectory('public/new')) {
     	// 	return 'deleted';
-    	$url=Storage::url('sohel.jpg');
-    	return "<img src='".$url."'/>";
+    	// $url=Storage::url('sohel.jpg');
+    	// return "<img src='".$url."'/>";
     	// php artisan storage:link  when we neet url then we create this artisn command
+    	
+    	// return Storage::size('public/sohel.jpg');
+    	// return Storage::lastModified('public/sohel.jpg');
+    	// return Storage::copy('public/sohel.jpg', 'sohel.jpg');
+
+    	// if (Storage::copy('public/sohel.jpg', 'sohe.jpg')) {
+    	// 	return 'copied';
+    	// }
+
+    	if (Storage::move('public/sohel.jpg', 'sohe.jpg')) {
+    		return 'moved';
+    	}
      }
 }
