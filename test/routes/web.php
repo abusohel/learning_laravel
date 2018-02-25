@@ -33,7 +33,7 @@ Route::group(['prefix' => 'admin'], function () {
 // Route::post('store','uploadController@store');
 // Route::get('show','uploadController@show');
 
-Route::resource('products','ProductController');
+Route::resource('products','ProductController')->middleware('admin');
 
 Route::get('file','FileController@ShowUpLoadForm')->name('upload.file');
 Route::post('file','FileController@storeFile');
