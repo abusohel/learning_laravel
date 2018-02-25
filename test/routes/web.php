@@ -29,8 +29,11 @@ Route::group(['prefix' => 'admin'], function () {
   Route::get('/password/reset/{token}', 'AdminAuth\ResetPasswordController@showResetForm');
 });
 
-Route::get('upload','uploadController@index');
-Route::post('store','uploadController@store');
-Route::get('show','uploadController@show');
+// Route::get('upload','uploadController@index');
+// Route::post('store','uploadController@store');
+// Route::get('show','uploadController@show');
 
 Route::resource('products','ProductController');
+
+Route::get('file','FileController@ShowUpLoadForm')->name('upload.file');
+Route::post('file','FileController@storeFile');
