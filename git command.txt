@@ -1,8 +1,23 @@
 git command
 https://github.com/hoadv/employee-mgmt-laravel5.4-adminlte
+
+
+composer update 
+rename .env.example 
+with .env configure database on .env file 
+create a new database with name employees_db 
+create new tables with: php artisan migrate 
+create default user for system with: php artisan db:seed 
+php artisan key:generate 
+Execute: php artisan config:clear 
+Execute: php artisan serve
+
 https://www.youtube.com/watch?v=dRFff56vl5k
 https://www.youtube.com/watch?v=Jbt5bEgv_QM
 https://www.youtube.com/watch?v=bDmmKOdgIeY
 https://www.youtube.com/watch?v=cEdQvdYLuSg
 https://www.youtube.com/watch?v=nf7X-mTjHTs
 https://www.youtube.com/watch?v=X7bICABPMS4
+https://github.com/Hesto/multi-auth
+
+
